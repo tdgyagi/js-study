@@ -41,20 +41,8 @@ $(function(){
     $txt.text("最小に達しました");
   }
 
-
-
-
-  $inc.click(
-    function(){
-      countUp();
-    }
-  )
-
-  $dec.click(
-    function(){
-      countDown();
-    }
-  )
+  $inc.click( function(){ countUp();})
+  $dec.click( function(){ countDown();})
 
 
 
