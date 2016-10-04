@@ -9,21 +9,40 @@ $(function(){
 
   function countUp(){
     if( count < maxCount){
-      count = count + 1;
+      count ++;
+      countTxtView();
     }
-    countAction();
+    if(count > maxCount-1){
+      maxTxtView();
+    }
+
   }
 
   function countDown(){
     if( count > 0){
-      count = count - 1;
+      count--;
+      countTxtView();
     }
-    countAction();
+
+    if( count == 0){
+      minTxtView();
+    }
   }
 
-  function countAction(){
+  function countTxtView(){
     $txt.text(count);
   }
+
+  function maxTxtView(){
+    $txt.text("最大に達しました");
+  }
+
+  function minTxtView(){
+    $txt.text("最小に達しました");
+  }
+
+
+
 
   $inc.click(
     function(){
