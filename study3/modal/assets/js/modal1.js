@@ -5,6 +5,8 @@ $(function(){
  var $closeBtn = $(".container--close-btn");
  var $modal = $(".modal-window");
 
+ $modal.hide();
+
  $btn.click(function(){
    $modal.fadeIn();
  })
