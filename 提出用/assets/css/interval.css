@@ -1,0 +1,25 @@
+body{
+  box-sizing:border-box;
+}
+
+/*.container{
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.count-up{
+  font-size: 26px;
+}
+
+.count-stop,.count-play{
+  cursor: pointer;
+}*/
+.square {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+}
