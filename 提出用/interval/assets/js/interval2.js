@@ -10,44 +10,14 @@ $(function(){
   var count = 0;
   var time = 300;
 
-  function countUP(){
-    countTxt.text(count++);
-  }
-
-  var ID = setInterval(countUP, time);
-
 setInterval(function(){
-   BoxRondom = Math.floor( Math.random() *90 ) + "%";
+   BoxRondomX = Math.random() *$(window).width()+0;
+   BoxRondomY = Math.random() *$(window).height()+0;
     rondomBox.animate({
-        "left": BoxRondom,
-        "top":BoxRondom,
+        "left": BoxRondomX,
+        "top":BoxRondomY,
     },1000);
 },1000);
-
-
-  playBtn.click(function(){
-    ID = setInterval(countUP, time);
-  })
-  
-  startBtn.click(function(){
-    clearInterval(ID);
-    ID = setInterval(countUP, time);
-  });
-
-  stopBtn.mouseover(function(){
-    $(this).fadeTo(300,0.5);
-  })
-
-  stopBtn.mouseout(function(){
-    $(this).fadeTo(300,1);
-  })
-
-
-
-
-
-
-
 
 
 })//end function
