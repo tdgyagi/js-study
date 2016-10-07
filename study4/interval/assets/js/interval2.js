@@ -4,9 +4,10 @@ $(function(){
   var countTxt = $(".count-up");
   var stopBtn = $(".count-stop");
   var playBtn = $(".count-play");
+  var restartBtn =$(".count-restart");
 
   var count = 0;
-  var time = 300;
+  var time = 10;
 
   function countUP(){
     countTxt.text(count++);
@@ -19,6 +20,13 @@ $(function(){
   })
 
   playBtn.click(function(){
+    clearInterval(ID);
+    ID = setInterval(countUP, time);
+  })
+
+  restartBtn.click(function(){
+    count = 0;
+    clearInterval(ID);
     ID = setInterval(countUP, time);
   })
 
@@ -29,6 +37,8 @@ $(function(){
   stopBtn.mouseout(function(){
     $(this).fadeTo(300,1);
   })
+
+
 
 
 
