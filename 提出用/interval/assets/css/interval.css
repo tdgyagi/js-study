@@ -1,0 +1,24 @@
+body{
+  box-sizing:border-box;
+}
+
+.container{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.count-up{
+  font-size: 26px;
+}
+
+.count-stop,.count-play{
+  cursor: pointer;
+}
+
+.rondom-box{
+    width:100px;
+    height:100px;
+    background-color: #000;
+    position: absolute;
+}
