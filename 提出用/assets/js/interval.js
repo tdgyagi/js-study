@@ -6,7 +6,7 @@ $(function(){
   var w = $(window).width();
   var h = $(window).height();
 
-  var ID = setInterval(function(){move()}, time);
+  var ID = setInterval(move, time);
 
   function move(){
         $(".square").animate({
