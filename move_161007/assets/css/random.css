@@ -1,0 +1,11 @@
+body{
+  box-sizing: border-box;
+}
+
+.box{
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  background-color: #666;
+  position:absolute;
+}
