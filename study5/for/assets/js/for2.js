@@ -13,17 +13,16 @@ $(function(){
   function init(){
     $("body").append("<div class='container'></div>");
     $container = $(".container");
-    items = 100;
     xLine = 10;
-    yLine = 10;
+    yLine = 8;
     scale = 70;
     viewSpd = 8;
     createElements();
   }
 
   function createElements(){
-   for(var i=0; i<xLine; i++){
-     for(var n=0; n<yLine; n++){
+   for(var i=0; i<yLine; i++){
+     for(var n=0; n<xLine; n++){
        $container.append("<div class='box box"+i+"_"+n+"'></div");
        var $box =$(".box"+i+"_"+n)
        $box.css({

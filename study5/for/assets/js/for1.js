@@ -4,13 +4,12 @@ $(function(){
    $("body").append("<div class='container'></div>");
    var $container = $(".container");
 
-   var items = 100;
    var xLine = 10;
-   var yLine = 10;
+   var yLine = 8;
    var scale = 70;
 
-   for(var i=0; i<xLine; i++){
-     for(var n=0; n<yLine; n++){
+   for(var i=0; i<yLine; i++){
+     for(var n=0; n<xLine; n++){
 
        $container.append("<div class='box box"+i+"_"+n+"'></div");
        var $box =$(".box"+i+"_"+n)
